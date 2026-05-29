@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Site Sınırlayıcı",
+  "version": "1.0",
+  "permissions": ["storage", "tabs", "alarms", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Site Sınırlayıcı",
+    "default_icon": {
+      "48": "icons/icon.png"
+    }
+  },
+  "web_accessible_resources": [
+  "blocked.html",
+  "blocked.js"
+]
+}
